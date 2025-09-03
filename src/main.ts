@@ -17,6 +17,7 @@ class GameApp {
       score: 0,
       selectedAnswer: null,
       showExplanation: false,
+      showHint: false,
       gamePhase: 'problem'
     };
     this.currentProblem = PROBLEMS[0];
@@ -86,6 +87,22 @@ class GameApp {
         this.handleNextProblem();
       });
     }
+
+    // Reset button
+    const resetBtn = this.appElement.querySelector('#reset-btn');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        this.reset();
+      });
+    }
+
+    // Hint button
+    const hintBtn = this.appElement.querySelector('#hint-btn');
+    if (hintBtn) {
+      hintBtn.addEventListener('click', () => {
+        this.toggleHint();
+      });
+    }
   }
 
   private handleAnswerSelection(answer: string) {
@@ -109,10 +126,17 @@ class GameApp {
       this.currentProblem = PROBLEMS[this.gameState.currentProblemIndex];
       this.gameState.gamePhase = 'problem';
       this.gameState.selectedAnswer = null;
+      this.gameState.showHint = false; // Reset hint for new problem
     } else {
       this.gameState.gamePhase = 'complete';
     }
     
+    this.saveGameState();
+    this.render();
+  }
+
+  private toggleHint() {
+    this.gameState.showHint = !this.gameState.showHint;
     this.saveGameState();
     this.render();
   }
@@ -125,6 +149,7 @@ class GameApp {
       score: 0,
       selectedAnswer: null,
       showExplanation: false,
+      showHint: false,
       gamePhase: 'problem'
     };
     this.currentProblem = PROBLEMS[0];

@@ -5,7 +5,7 @@ export function createFeedbackDisplay(
   gameState: GameState, 
   isCorrect: boolean
 ): string {
-  const { currentProblemIndex, totalProblems, selectedAnswer } = gameState;
+  const { currentProblemIndex, totalProblems, selectedAnswer, showHint } = gameState;
   
   const feedbackColor = isCorrect ? 'terminal-green' : 'terminal-red';
   const feedbackIcon = isCorrect ? '✅' : '❌';
@@ -59,11 +59,19 @@ export function createFeedbackDisplay(
         </div>
       </div>
 
+      ${showHint && !isCorrect ? `
+        <div class="ascii-box-single mb-4 bg-terminal-yellow bg-opacity-10">
+          <div class="text-terminal-yellow text-sm">
+            💡 Vihje: ${problem.hint}
+          </div>
+        </div>
+      ` : ''}
+
       <div class="flex justify-between items-center mt-6 text-sm">
-        <button class="terminal-button px-4 py-2">← back</button>
+        <button class="terminal-button px-4 py-2" id="reset-btn">reset</button>
         ${isCorrect 
           ? '<button class="terminal-button px-4 py-2" id="next-btn">next →</button>'
-          : '<button class="terminal-button px-4 py-2">hint ?</button>'
+          : `<button class="terminal-button px-4 py-2" id="hint-btn">${showHint ? 'piilota vihje' : 'vihje ?'}</button>`
         }
       </div>
     </div>

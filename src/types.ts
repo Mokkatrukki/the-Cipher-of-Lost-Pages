@@ -4,6 +4,7 @@ export interface Problem {
   expression: string;
   correctAnswer: string;
   wrongAnswers: string[];
+  hint: string;
   explanation: {
     steps: ExplanationStep[];
     finalSimplification: string;
@@ -24,5 +25,6 @@ export interface GameState {
   score: number;
   selectedAnswer: string | null;
   showExplanation: boolean;
+  showHint: boolean;
   gamePhase: 'problem' | 'feedback' | 'explanation' | 'complete';
 }
