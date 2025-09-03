@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Terminal-style ASCII borders */
+@layer components {
+  .terminal-border-double {
+    border-style: solid;
+    border-width: 2px;
+    border-color: theme('colors.terminal.white');
+  }
+  
+  .terminal-border-single {
+    border-style: solid;
+    border-width: 1px;
+    border-color: theme('colors.terminal.gray');
+  }
+
+  .ascii-box-double {
+    @apply terminal-border-double p-4 bg-terminal-bg;
+  }
+  
+  .ascii-box-single {
+    @apply terminal-border-single p-3 bg-terminal-bg;
+  }
+
+  .terminal-button {
+    @apply ascii-box-single cursor-pointer transition-all duration-200 select-none;
+  }
+  
+  .terminal-button:hover {
+    @apply bg-terminal-gray bg-opacity-20;
+  }
+  
+  .terminal-button:active {
+    @apply bg-terminal-white bg-opacity-10;
+  }
+
+  .terminal-button-selected {
+    @apply terminal-border-double bg-terminal-green bg-opacity-10;
+  }
+}
