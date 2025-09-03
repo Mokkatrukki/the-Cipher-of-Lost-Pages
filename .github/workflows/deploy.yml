@@ -37,7 +37,7 @@ jobs:
         run: touch dist/.nojekyll
         
       - name: List dist contents (debug)
-        run: ls -la dist/
+        run: ls -la dist/ && ls -la dist/assets/
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
