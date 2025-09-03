@@ -60,7 +60,21 @@ class GameApp {
         html = '<div class="text-center p-8">Explanation view coming soon...</div>';
         break;
       case 'complete':
-        html = '<div class="text-center p-8">Game complete! 🎉</div>';
+        html = `
+          <div class="ascii-box-double max-w-md mx-auto min-h-screen flex flex-col justify-center">
+            <div class="text-center mb-6">
+              <div class="text-terminal-white text-xl mb-2">THE CIPHER OF LOST PAGES</div>
+              <div class="h-px bg-terminal-white mb-4"></div>
+            </div>
+            <div class="text-center mb-6">
+              <div class="text-terminal-green text-lg font-bold mb-4">GAME COMPLETE!</div>
+              <div class="text-terminal-white">Score: ${this.gameState.score}/${this.gameState.totalProblems}</div>
+            </div>
+            <div class="text-center">
+              <button class="terminal-button px-6 py-3" id="reset-btn">Play Again</button>
+            </div>
+          </div>
+        `;
         break;
     }
     

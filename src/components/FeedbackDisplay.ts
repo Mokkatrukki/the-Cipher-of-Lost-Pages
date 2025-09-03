@@ -8,7 +8,7 @@ export function createFeedbackDisplay(
   const { currentProblemIndex, totalProblems, selectedAnswer, showHint } = gameState;
   
   const feedbackColor = isCorrect ? 'terminal-green' : 'terminal-red';
-  const feedbackIcon = isCorrect ? '✅' : '❌';
+  const feedbackIcon = isCorrect ? '' : '';
   const feedbackText = isCorrect ? 'CORRECT!' : 'WRONG, TRY AGAIN';
   
   const allAnswers = gameState.shuffledAnswers;
@@ -23,7 +23,7 @@ export function createFeedbackDisplay(
 
       <div class="text-center mb-6">
         <div class="text-${feedbackColor} text-lg font-bold">
-          ${feedbackIcon} ${feedbackText}
+          ${feedbackText}
         </div>
       </div>
 
@@ -62,7 +62,7 @@ export function createFeedbackDisplay(
       ${showHint && !isCorrect ? `
         <div class="ascii-box-single mb-4 bg-terminal-yellow bg-opacity-10">
           <div class="text-terminal-yellow text-sm">
-            💡 Vihje: ${problem.hint}
+            Vihje: ${problem.hint}
           </div>
         </div>
       ` : ''}
