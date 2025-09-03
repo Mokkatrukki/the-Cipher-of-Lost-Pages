@@ -36,6 +36,13 @@ jobs:
       - name: Add .nojekyll file
         run: touch dist/.nojekyll
         
+      - name: Create .htaccess for proper MIME types
+        run: |
+          cat > dist/.htaccess << 'EOF'
+          AddType application/javascript .js
+          AddType text/css .css
+          EOF
+        
       - name: List dist contents (debug)
         run: ls -la dist/ && ls -la dist/assets/
         
