@@ -12,5 +12,5 @@ primary_region = "arn"
   processes = ["app"]
 
 [[statics]]
-  guest_path = "/app/dist"
+  guest_path = "/usr/share/nginx/html"
   url_prefix = "/"

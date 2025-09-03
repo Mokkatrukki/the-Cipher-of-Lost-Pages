@@ -8,7 +8,6 @@ export function createFeedbackDisplay(
   const { currentProblemIndex, totalProblems, selectedAnswer, showHint } = gameState;
   
   const feedbackColor = isCorrect ? 'terminal-green' : 'terminal-red';
-  const feedbackIcon = isCorrect ? '' : '';
   const feedbackText = isCorrect ? 'CORRECT!' : 'WRONG, TRY AGAIN';
   
   const allAnswers = gameState.shuffledAnswers;

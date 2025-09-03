@@ -1,28 +1,52 @@
 import './style.css';
 import { Problem, GameState } from './types';
-import { PROBLEMS } from './data/problems';
 import { createProblemDisplay } from './components/ProblemDisplay';
 import { createFeedbackDisplay } from './components/FeedbackDisplay';
 
 class GameApp {
-  private gameState: GameState;
-  private currentProblem: Problem;
+  private gameState!: GameState;
+  private currentProblem!: Problem;
   private appElement: HTMLElement;
+  private problems: Problem[] = [];
 
   constructor() {
     this.appElement = document.querySelector<HTMLDivElement>('#app')!;
+    this.initAsync();
+  }
+
+  private async initAsync() {
+    await this.loadProblems();
     this.gameState = {
       currentProblemIndex: 0,
-      totalProblems: PROBLEMS.length,
+      totalProblems: this.problems.length,
       score: 0,
       selectedAnswer: null,
       showExplanation: false,
       showHint: false,
       gamePhase: 'problem',
-      shuffledAnswers: this.shuffleAnswers(PROBLEMS[0])
+      shuffledAnswers: this.shuffleAnswers(this.problems[0])
     };
-    this.currentProblem = PROBLEMS[0];
+    this.currentProblem = this.problems[0];
     this.init();
+  }
+
+  private async loadProblems() {
+    try {
+      const response = await fetch('./src/data/all_problems.json');
+      this.problems = await response.json();
+      console.log(`✅ Loaded ${this.problems.length} problems successfully!`);
+    } catch (error) {
+      console.error('Failed to load problems:', error);
+      // Fallback to original problems file
+      try {
+        const fallbackResponse = await fetch('./src/data/problems.json');
+        this.problems = await fallbackResponse.json();
+        console.log(`⚠️ Loaded fallback ${this.problems.length} problems`);
+      } catch (fallbackError) {
+        console.error('Failed to load fallback problems:', fallbackError);
+        this.problems = [];
+      }
+    }
   }
 
   private init() {
@@ -36,7 +60,7 @@ class GameApp {
     if (saved) {
       const savedState = JSON.parse(saved);
       this.gameState = { ...this.gameState, ...savedState };
-      this.currentProblem = PROBLEMS[this.gameState.currentProblemIndex];
+      this.currentProblem = this.problems[this.gameState.currentProblemIndex];
     }
   }
 
@@ -141,9 +165,9 @@ class GameApp {
   }
 
   private handleNextProblem() {
-    if (this.gameState.currentProblemIndex < PROBLEMS.length - 1) {
+    if (this.gameState.currentProblemIndex < this.problems.length - 1) {
       this.gameState.currentProblemIndex++;
-      this.currentProblem = PROBLEMS[this.gameState.currentProblemIndex];
+      this.currentProblem = this.problems[this.gameState.currentProblemIndex];
       this.gameState.gamePhase = 'problem';
       this.gameState.selectedAnswer = null;
       this.gameState.showHint = false; // Reset hint for new problem
@@ -166,15 +190,15 @@ class GameApp {
   reset() {
     this.gameState = {
       currentProblemIndex: 0,
-      totalProblems: PROBLEMS.length,
+      totalProblems: this.problems.length,
       score: 0,
       selectedAnswer: null,
       showExplanation: false,
       showHint: false,
       gamePhase: 'problem',
-      shuffledAnswers: this.shuffleAnswers(PROBLEMS[0])
+      shuffledAnswers: this.shuffleAnswers(this.problems[0])
     };
-    this.currentProblem = PROBLEMS[0];
+    this.currentProblem = this.problems[0];
     this.saveGameState();
     this.render();
   }

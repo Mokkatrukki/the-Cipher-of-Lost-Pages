@@ -1,0 +1,662 @@
+[
+  {
+    "id": "easy_1",
+    "difficulty": "easy",
+    "expression": "(x + 2)(x + 3)",
+    "correctAnswer": "x² + 5x + 6",
+    "wrongAnswers": [
+      "x² + 6x + 6",
+      "x² + 5x + 5"
+    ],
+    "hint": "Käytä FOIL-menetelmää (First, Outer, Inner, Last) laajentaaksesi binomin: Kerro ensimmäiset termit, sitten ulommaiset, sitten sisemmät ja lopuksi viimeiset termit. Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "x",
+          "term2": "x",
+          "result": "x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "x",
+          "term2": "3",
+          "result": "3x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "2",
+          "term2": "x",
+          "result": "2x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "2",
+          "term2": "3",
+          "result": "6",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "x² + 5x + 6"
+    }
+  },
+  {
+    "id": "easy_2",
+    "difficulty": "easy",
+    "expression": "(x + 2)(x + 3)",
+    "correctAnswer": "x² + 5x + 6",
+    "wrongAnswers": [
+      "x² + 6x + 6",
+      "x² + 5x + 5"
+    ],
+    "hint": "Käytä FOIL-menetelmää (First, Outer, Inner, Last) laajentaaksesi binomin: Kerro ensimmäiset termit, sitten ulommaiset, sitten sisemmät ja lopuksi viimeiset termit. Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "x",
+          "term2": "x",
+          "result": "x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "x",
+          "term2": "3",
+          "result": "3x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "2",
+          "term2": "x",
+          "result": "2x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "2",
+          "term2": "3",
+          "result": "6",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "x² + 5x + 6"
+    }
+  },
+  {
+    "id": "easy_3",
+    "difficulty": "easy",
+    "expression": "(x + 2)(x + 3)",
+    "correctAnswer": "x² + 5x + 6",
+    "wrongAnswers": [
+      "x² + 6x + 6",
+      "x² + 5x + 5"
+    ],
+    "hint": "Käytä FOIL-menetelmää (First, Outer, Inner, Last) laajentaaksesi binomin: Kerro ensimmäiset termit, sitten ulommaiset, sitten sisemmät ja lopuksi viimeiset termit. Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "x",
+          "term2": "x",
+          "result": "x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "x",
+          "term2": "3",
+          "result": "3x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "2",
+          "term2": "x",
+          "result": "2x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "2",
+          "term2": "3",
+          "result": "6",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "x² + 5x + 6"
+    }
+  },
+  {
+    "id": "easy_4",
+    "difficulty": "easy",
+    "expression": "(x + 2)(x + 3)",
+    "correctAnswer": "x² + 5x + 6",
+    "wrongAnswers": [
+      "x² + 6x + 6",
+      "x² + 5x + 5"
+    ],
+    "hint": "Käytä FOIL-menetelmää (First, Outer, Inner, Last) laajentaaksesi binomin: Kerro ensimmäiset termit, sitten ulommaiset, sitten sisemmät ja lopuksi viimeiset termit. Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "x",
+          "term2": "x",
+          "result": "x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "x",
+          "term2": "3",
+          "result": "3x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "2",
+          "term2": "x",
+          "result": "2x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "2",
+          "term2": "3",
+          "result": "6",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "x² + 5x + 6"
+    }
+  },
+  {
+    "id": "easy_5",
+    "difficulty": "easy",
+    "expression": "(x + 2)(x + 3)",
+    "correctAnswer": "x² + 5x + 6",
+    "wrongAnswers": [
+      "x² + 6x + 6",
+      "x² + 5x + 5"
+    ],
+    "hint": "Käytä FOIL-menetelmää (First, Outer, Inner, Last) laajentaaksesi binomin: Kerro ensimmäiset termit, sitten ulommaiset, sitten sisemmät ja lopuksi viimeiset termit. Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "x",
+          "term2": "x",
+          "result": "x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "x",
+          "term2": "3",
+          "result": "3x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "2",
+          "term2": "x",
+          "result": "2x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "2",
+          "term2": "3",
+          "result": "6",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "x² + 5x + 6"
+    }
+  },
+  {
+    "id": "medium_1",
+    "difficulty": "medium",
+    "expression": "(3x - 2)(4x + 5)",
+    "correctAnswer": "12x² + 15x - 8x - 10",
+    "wrongAnswers": [
+      "12x² + 23x - 10",
+      "12x² - 7x - 10"
+    ],
+    "hint": "Käytä FOIL-menetelmää: Ensimmäiset (First), Ulommaiset (Outer), Sisemmät (Inner), Viimeiset (Last). Kerro ensin (3x) ja (4x), sitten (3x) ja (5), sitten (-2) ja (4x), ja lopuksi (-2) ja (5). Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "3x",
+          "term2": "4x",
+          "result": "12x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "3x",
+          "term2": "5",
+          "result": "15x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "-2",
+          "term2": "4x",
+          "result": "-8x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "-2",
+          "term2": "5",
+          "result": "-10",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "12x² + 7x - 10"
+    }
+  },
+  {
+    "id": "medium_2",
+    "difficulty": "medium",
+    "expression": "(3x - 2)(4x + 5)",
+    "correctAnswer": "12x² + 15x - 8x - 10",
+    "wrongAnswers": [
+      "12x² + 23x - 10",
+      "12x² - 7x - 10"
+    ],
+    "hint": "Käytä FOIL-menetelmää: Ensimmäiset (First), Ulommaiset (Outer), Sisemmät (Inner), Viimeiset (Last). Kerro ensin (3x) ja (4x), sitten (3x) ja (5), sitten (-2) ja (4x), ja lopuksi (-2) ja (5). Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "3x",
+          "term2": "4x",
+          "result": "12x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "3x",
+          "term2": "5",
+          "result": "15x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "-2",
+          "term2": "4x",
+          "result": "-8x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "-2",
+          "term2": "5",
+          "result": "-10",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "12x² + 7x - 10"
+    }
+  },
+  {
+    "id": "medium_3",
+    "difficulty": "medium",
+    "expression": "(3x - 2)(4x + 5)",
+    "correctAnswer": "12x² + 15x - 8x - 10",
+    "wrongAnswers": [
+      "12x² + 23x - 10",
+      "12x² - 7x - 10"
+    ],
+    "hint": "Käytä FOIL-menetelmää: Ensimmäiset (First), Ulommaiset (Outer), Sisemmät (Inner), Viimeiset (Last). Kerro ensin (3x) ja (4x), sitten (3x) ja (5), sitten (-2) ja (4x), ja lopuksi (-2) ja (5). Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "3x",
+          "term2": "4x",
+          "result": "12x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "3x",
+          "term2": "5",
+          "result": "15x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "-2",
+          "term2": "4x",
+          "result": "-8x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "-2",
+          "term2": "5",
+          "result": "-10",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "12x² + 7x - 10"
+    }
+  },
+  {
+    "id": "medium_4",
+    "difficulty": "medium",
+    "expression": "(3x - 2)(4x + 5)",
+    "correctAnswer": "12x² + 15x - 8x - 10",
+    "wrongAnswers": [
+      "12x² + 23x - 10",
+      "12x² - 7x - 10"
+    ],
+    "hint": "Käytä FOIL-menetelmää: Ensimmäiset (First), Ulommaiset (Outer), Sisemmät (Inner), Viimeiset (Last). Kerro ensin (3x) ja (4x), sitten (3x) ja (5), sitten (-2) ja (4x), ja lopuksi (-2) ja (5). Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "3x",
+          "term2": "4x",
+          "result": "12x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "3x",
+          "term2": "5",
+          "result": "15x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "-2",
+          "term2": "4x",
+          "result": "-8x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "-2",
+          "term2": "5",
+          "result": "-10",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "12x² + 7x - 10"
+    }
+  },
+  {
+    "id": "medium_5",
+    "difficulty": "medium",
+    "expression": "(3x - 2)(4x + 5)",
+    "correctAnswer": "12x² + 15x - 8x - 10",
+    "wrongAnswers": [
+      "12x² + 23x - 10",
+      "12x² - 7x - 10"
+    ],
+    "hint": "Käytä FOIL-menetelmää: Ensimmäiset (First), Ulommaiset (Outer), Sisemmät (Inner), Viimeiset (Last). Kerro ensin (3x) ja (4x), sitten (3x) ja (5), sitten (-2) ja (4x), ja lopuksi (-2) ja (5). Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "3x",
+          "term2": "4x",
+          "result": "12x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "3x",
+          "term2": "5",
+          "result": "15x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "-2",
+          "term2": "4x",
+          "result": "-8x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "-2",
+          "term2": "5",
+          "result": "-10",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "12x² + 7x - 10"
+    }
+  },
+  {
+    "id": "hard_1",
+    "difficulty": "hard",
+    "expression": "(7x - 5)(4x - 6)",
+    "correctAnswer": "28x² - 42x - 20x + 30",
+    "wrongAnswers": [
+      "28x² - 22x + 30",
+      "28x² - 42x + 20x - 30"
+    ],
+    "hint": "Käytä FOIL-menetelmää (First, Outer, Inner, Last) laajentaaksesi binomin: Kerro ensin termit (7x * 4x), sitten ulkotermit (7x * -6), sitten sisätermit (-5 * 4x) ja lopuksi viimeiset termit (-5 * -6). Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "7x",
+          "term2": "4x",
+          "result": "28x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "7x",
+          "term2": "-6",
+          "result": "-42x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "-5",
+          "term2": "4x",
+          "result": "-20x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "-5",
+          "term2": "-6",
+          "result": "30",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "28x² - 62x + 30"
+    }
+  },
+  {
+    "id": "hard_2",
+    "difficulty": "hard",
+    "expression": "(7x - 5)(4x - 6)",
+    "correctAnswer": "28x² - 42x - 20x + 30",
+    "wrongAnswers": [
+      "28x² - 22x + 30",
+      "28x² - 42x + 20x - 30"
+    ],
+    "hint": "Käytä FOIL-menetelmää (First, Outer, Inner, Last) laajentaaksesi binomin: Kerro ensin termit (7x * 4x), sitten ulkotermit (7x * -6), sitten sisätermit (-5 * 4x) ja lopuksi viimeiset termit (-5 * -6). Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "7x",
+          "term2": "4x",
+          "result": "28x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "7x",
+          "term2": "-6",
+          "result": "-42x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "-5",
+          "term2": "4x",
+          "result": "-20x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "-5",
+          "term2": "-6",
+          "result": "30",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "28x² - 62x + 30"
+    }
+  },
+  {
+    "id": "hard_3",
+    "difficulty": "hard",
+    "expression": "(7x - 5)(4x - 6)",
+    "correctAnswer": "28x² - 42x - 20x + 30",
+    "wrongAnswers": [
+      "28x² - 22x + 30",
+      "28x² - 42x + 20x - 30"
+    ],
+    "hint": "Käytä FOIL-menetelmää (First, Outer, Inner, Last) laajentaaksesi binomin: Kerro ensin termit (7x * 4x), sitten ulkotermit (7x * -6), sitten sisätermit (-5 * 4x) ja lopuksi viimeiset termit (-5 * -6). Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "7x",
+          "term2": "4x",
+          "result": "28x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "7x",
+          "term2": "-6",
+          "result": "-42x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "-5",
+          "term2": "4x",
+          "result": "-20x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "-5",
+          "term2": "-6",
+          "result": "30",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "28x² - 62x + 30"
+    }
+  },
+  {
+    "id": "hard_4",
+    "difficulty": "hard",
+    "expression": "(7x - 5)(4x - 6)",
+    "correctAnswer": "28x² - 42x - 20x + 30",
+    "wrongAnswers": [
+      "28x² - 22x + 30",
+      "28x² - 42x + 20x - 30"
+    ],
+    "hint": "Käytä FOIL-menetelmää (First, Outer, Inner, Last) laajentaaksesi binomin: Kerro ensin termit (7x * 4x), sitten ulkotermit (7x * -6), sitten sisätermit (-5 * 4x) ja lopuksi viimeiset termit (-5 * -6). Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "7x",
+          "term2": "4x",
+          "result": "28x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "7x",
+          "term2": "-6",
+          "result": "-42x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "-5",
+          "term2": "4x",
+          "result": "-20x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "-5",
+          "term2": "-6",
+          "result": "30",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "28x² - 62x + 30"
+    }
+  },
+  {
+    "id": "hard_5",
+    "difficulty": "hard",
+    "expression": "(7x - 5)(4x - 6)",
+    "correctAnswer": "28x² - 42x - 20x + 30",
+    "wrongAnswers": [
+      "28x² - 22x + 30",
+      "28x² - 42x + 20x - 30"
+    ],
+    "hint": "Käytä FOIL-menetelmää (First, Outer, Inner, Last) laajentaaksesi binomin: Kerro ensin termit (7x * 4x), sitten ulkotermit (7x * -6), sitten sisätermit (-5 * 4x) ja lopuksi viimeiset termit (-5 * -6). Yhdistä sitten samanmuotoiset termit.",
+    "explanation": {
+      "steps": [
+        {
+          "term1": "7x",
+          "term2": "4x",
+          "result": "28x²",
+          "color": "yellow",
+          "position": 1
+        },
+        {
+          "term1": "7x",
+          "term2": "-6",
+          "result": "-42x",
+          "color": "cyan",
+          "position": 2
+        },
+        {
+          "term1": "-5",
+          "term2": "4x",
+          "result": "-20x",
+          "color": "purple",
+          "position": 3
+        },
+        {
+          "term1": "-5",
+          "term2": "-6",
+          "result": "30",
+          "color": "green",
+          "position": 4
+        }
+      ],
+      "finalSimplification": "28x² - 62x + 30"
+    }
+  }
+]
