@@ -18,7 +18,8 @@ class GameApp {
       selectedAnswer: null,
       showExplanation: false,
       showHint: false,
-      gamePhase: 'problem'
+      gamePhase: 'problem',
+      shuffledAnswers: this.shuffleAnswers(PROBLEMS[0])
     };
     this.currentProblem = PROBLEMS[0];
     this.init();
@@ -65,6 +66,11 @@ class GameApp {
     
     this.appElement.innerHTML = html;
     this.attachEventListeners();
+  }
+
+  private shuffleAnswers(problem: Problem): string[] {
+    const allAnswers = [problem.correctAnswer, ...problem.wrongAnswers];
+    return allAnswers.sort(() => Math.random() - 0.5);
   }
 
   private attachEventListeners() {
@@ -127,6 +133,7 @@ class GameApp {
       this.gameState.gamePhase = 'problem';
       this.gameState.selectedAnswer = null;
       this.gameState.showHint = false; // Reset hint for new problem
+      this.gameState.shuffledAnswers = this.shuffleAnswers(this.currentProblem); // Shuffle answers for new problem
     } else {
       this.gameState.gamePhase = 'complete';
     }
@@ -150,7 +157,8 @@ class GameApp {
       selectedAnswer: null,
       showExplanation: false,
       showHint: false,
-      gamePhase: 'problem'
+      gamePhase: 'problem',
+      shuffledAnswers: this.shuffleAnswers(PROBLEMS[0])
     };
     this.currentProblem = PROBLEMS[0];
     this.saveGameState();

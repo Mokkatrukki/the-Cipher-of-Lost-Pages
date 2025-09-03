@@ -3,7 +3,7 @@ import { Problem, GameState } from '../types';
 export function createProblemDisplay(problem: Problem, gameState: GameState): string {
   const { currentProblemIndex, totalProblems, showHint } = gameState;
   
-  const allAnswers = [problem.correctAnswer, ...problem.wrongAnswers].sort(() => Math.random() - 0.5);
+  const allAnswers = gameState.shuffledAnswers;
   
   return `
     <div class="ascii-box-double max-w-md mx-auto min-h-screen flex flex-col">

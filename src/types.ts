@@ -27,4 +27,5 @@ export interface GameState {
   showExplanation: boolean;
   showHint: boolean;
   gamePhase: 'problem' | 'feedback' | 'explanation' | 'complete';
+  shuffledAnswers: string[];
 }

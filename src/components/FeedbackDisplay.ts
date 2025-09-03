@@ -11,7 +11,7 @@ export function createFeedbackDisplay(
   const feedbackIcon = isCorrect ? '✅' : '❌';
   const feedbackText = isCorrect ? 'CORRECT!' : 'WRONG, TRY AGAIN';
   
-  const allAnswers = [problem.correctAnswer, ...problem.wrongAnswers].sort(() => Math.random() - 0.5);
+  const allAnswers = gameState.shuffledAnswers;
   
   return `
     <div class="ascii-box-double max-w-md mx-auto min-h-screen flex flex-col">
@@ -63,6 +63,25 @@ export function createFeedbackDisplay(
         <div class="ascii-box-single mb-4 bg-terminal-yellow bg-opacity-10">
           <div class="text-terminal-yellow text-sm">
             💡 Vihje: ${problem.hint}
+          </div>
+        </div>
+      ` : ''}
+
+      ${isCorrect ? `
+        <div class="ascii-box-single mb-4">
+          <div class="text-terminal-white mb-3">
+            <strong>Näin se ratkaistaan:</strong>
+          </div>
+          <div class="font-mono text-sm space-y-2">
+            <div class="text-terminal-white mb-2">${problem.expression}</div>
+            ${problem.explanation.steps.map(step => `
+              <div class="text-terminal-white">
+                ${step.term1} × ${step.term2} = ${step.result}
+              </div>
+            `).join('')}
+            <div class="text-terminal-white mt-3 pt-2 border-t border-terminal-gray">
+              ${problem.explanation.finalSimplification}
+            </div>
           </div>
         </div>
       ` : ''}
